@@ -92,7 +92,7 @@ height: 40px;
   <script src="../Facebook/jquery.onefblikev1.1.js"></script>
     
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"> </script> 
- 
+ <script src="childbrowser.js"></script>
  
  <script>
  /*$(document).ready(function () {
@@ -164,10 +164,16 @@ colorscheme: 'light'
 					 	 
 $('#face').click(function(e) {
 	
-url="http://www.elmural.edu.do/";
 	
+url="http://www.elmural.edu.do/";
+  alert('entra');	
 	//window.open("https://www.facebook.com/sharer/sharer.php?u=http://www.elmural.edu.do/");
-  window.plugins.childBrowser.openExternal('https://www.facebook.com/sharer/sharer.php?u=http://www.elmural.edu.do/');
+  
+ // window.plugins.childBrowser.openExternal('http://www.elmural.edu.do/');
+  
+  //window.plugins.childBrowser.openExternal('http://www.google.com');
+  
+window.plugins.childBrowser.showWebPage('http://www.google.com',{ showLocationBar: true });
    // $.mobile.changePage( "index.html", { role: "dialog" } );
   //  window.showModalDialog(     'https://www.facebook.com/sharer/sharer.php?redirect_uri=Noticias.html&u='+document.  getElementById('noticias').textContent+"Visitanos "+'http://www.elmural.edu.do/'); 
        
